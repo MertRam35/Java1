@@ -26,7 +26,10 @@ public class Car {
         System.out.println(brand+" "+ model+" is driving");
     }
 
-
+    /**
+     *
+     * @return
+     */
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
@@ -38,4 +41,5 @@ public class Car {
 
                 '}';
     }
+
 }
