@@ -35,6 +35,7 @@ public class Car {
                 ", price= $" + price +
                 ", color='" + color + '\'' +
                 ", miles=" + miles +
+
                 '}';
     }
 }
