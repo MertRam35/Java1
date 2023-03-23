@@ -3,11 +3,12 @@ package day14_String;
 public class MethodOfSpring {
     public static void main(String[] args) {
 
-        String str1 = "  batch 25 :                                                         ";
-        str1 = str1.trim();
-        System.out.println(str1 + "  hi");
-
-        int str = str1.indexOf("h");
+        String word = "x  batch 25 :                                                         ";
+        word = word.trim();
+        System.out.println(word + "  hi");
+        System.out.println("str1.toUpperCase() = " + (word.replaceFirst("x","")));
+        System.out.println((word.replaceFirst("x","")));
+        int str = word.indexOf("h");
         System.out.println(str);
         String stra = "Java is fun, I love learning Java";
 

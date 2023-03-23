@@ -11,6 +11,10 @@ public class mail {
 String s1 = "Java is fun, Java is cool";
 
 
-        System.out.println("compact.salça".substring("compaaaact.s".lastIndexOf(".")+1));
+        System.out.println("compact.salça".substring("compact.s".lastIndexOf(".")+1));
+        float a =100.459_524f;
+        byte b = (byte) a;
+        double c = b;
+        System.out.println(c);
     }
 }
