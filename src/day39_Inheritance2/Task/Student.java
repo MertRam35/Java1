@@ -1,6 +1,6 @@
 package day39_Inheritance2.Task;
 
-public class Student extends Person{
+public class Student extends Person {
     public double StudentId;
     public String fieldOfStudy;
 
@@ -24,5 +24,19 @@ public class Student extends Person{
         super(name, age, gender);
         setStudentId(studentId);
         setFieldOfStudy(fieldOfStudy);
+    }
+
+    public void study(){
+        System.out.println(name+" is studying");
+    }
+
+    public String toString() {
+        return "Student{" +
+                "StudentId=" + StudentId +
+                ", fieldOfStudy='" + fieldOfStudy + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
     }
 }
