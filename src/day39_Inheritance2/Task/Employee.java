@@ -18,7 +18,7 @@ public class Employee extends Person {
     }
 
     public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
+        setJobTitle(jobTitle);
     }
 
     public double getSalary() {
@@ -26,7 +26,7 @@ public class Employee extends Person {
     }
 
     public void setSalary(double salary) {
-        this.salary = salary;
+        setSalary(salary);
     }
 
     public Employee(String name, int age, char gender, double employeeId, String jobTitle, double salary) {
