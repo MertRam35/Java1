@@ -7,6 +7,9 @@ public class fgh {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+int a ;
+double b ;
+String c;
 
         System.out.println("Enter age:");
         int age = input.nextInt();

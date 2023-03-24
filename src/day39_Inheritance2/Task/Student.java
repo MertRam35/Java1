@@ -1,15 +1,15 @@
 package day39_Inheritance2.Task;
 
 public class Student extends Person {
-    public double StudentId;
-    public String fieldOfStudy;
+    private double StudentId;
+    private String fieldOfStudy;
 
     public double getStudentId() {
         return StudentId;
     }
 
     public void setStudentId(double studentId) {
-        setStudentId(studentId);
+        this.StudentId = studentId;
     }
 
     public String getFieldOfStudy() {
@@ -17,7 +17,7 @@ public class Student extends Person {
     }
 
     public void setFieldOfStudy(String fieldOfStudy) {
-        setFieldOfStudy(fieldOfStudy);
+        this.fieldOfStudy = fieldOfStudy;
     }
 
     public Student(String name, int age, char gender, double studentId, String fieldOfStudy) {
@@ -27,16 +27,16 @@ public class Student extends Person {
     }
 
     public void study(){
-        System.out.println(name+" is studying");
+        System.out.println(getName()+" is studying");
     }
 
     public String toString() {
         return "Student{" +
-                "StudentId=" + StudentId +
-                ", fieldOfStudy='" + fieldOfStudy + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
+                "StudentId=" + getStudentId() +
+                ", fieldOfStudy='" + getFieldOfStudy() + '\'' +
+                ", name='" + getName()+ '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
                 '}';
     }
 }

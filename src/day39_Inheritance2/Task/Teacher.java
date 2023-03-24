@@ -5,17 +5,8 @@ public class Teacher extends Employee{
         super(name, age, gender, employeeId, jobTitle, salary);
     }
     public void work(){
-        System.out.println(name+" is teaching");
+        System.out.println(getJobTitle()+" "+getName()+" is teaching");
     }
 
-    public String toString() {
-        return "Teacher{" +
-                "employeeId=" + employeeId +
-                ", jobTitle='" + jobTitle + '\'' +
-                ", salary=" + salary +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
-                '}';
-    }
+
 }

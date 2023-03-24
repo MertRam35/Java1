@@ -1,9 +1,9 @@
 package day39_Inheritance2.Task;
 
 public class Person {
-    String name;
-    int age;
-    char gender;
+    private String name;
+    private int age;
+    private char gender;
 
     public String getName() {
         return name;
@@ -36,23 +36,23 @@ public class Person {
     }
 
     public void eat() {
-        System.out.println(name + " is eating");
+        System.out.println(getName() + " is eating");
     }
 
     public void drink() {
-        System.out.println(name + " is drinking");
+        System.out.println(getName() + " is drinking");
 
     }
     public void sleep(){
-        System.out.println(name+" is sleeping");
+        System.out.println(getName()+" is sleeping");
     }
 
 
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
                 '}';
     }
 }

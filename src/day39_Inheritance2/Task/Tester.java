@@ -8,21 +8,21 @@ public class Tester extends Employee{
 
 
     public void createTicket(){
-        System.out.println(name+" is creating ticket");
+        System.out.println(getJobTitle()+" "+getName()+" is creating ticket");
     }
     public void work(){
-        System.out.println(name+" is testing");
+        System.out.println(getJobTitle()+" "+getName()+" is testing");
     }
 
 
     public String toString() {
         return "Tester{" +
-                "employeeId=" + employeeId +
-                ", jobTitle='" + jobTitle + '\'' +
-                ", salary=" + salary +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
+                "employeeId=" + getEmployeeId() +
+                ", jobTitle='" + getJobTitle() + '\'' +
+                ", salary=" + getSalary() +
+                ", name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
                 '}';
     }
 }
